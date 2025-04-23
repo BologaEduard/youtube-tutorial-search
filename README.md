@@ -6,7 +6,7 @@ Ez a szkript a YouTube API-t használva ChatGPT-vel kapcsolatos scripting vagy c
 
 1.  Klónozd a repót:
     ```
-    git clone <repo_url>
+    git clone https://github.com/BologaEduard/youtube-tutorial-search.git
     ```
 2.  Navigálj a mappába:
     ```
