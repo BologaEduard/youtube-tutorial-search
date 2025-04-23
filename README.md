@@ -13,20 +13,23 @@ Ez a szkript a YouTube API-t használva ChatGPT-vel kapcsolatos scripting vagy c
     cd youtube_script
     ```
 3.  Telepítsd a függőségeket:
-    ```
-    sudo apt-get install jq
-    ```
-    vagy
-    ```
-    sudo yum install jq
-    ```
-    (a disztribúciótól függően)
+    *   Először frissítsd a csomaglistát:
+        ```
+        sudo apt update
+        ```
+    *   Majd telepítsd a `jq`-t és a `curl`-t:
+        ```
+        sudo apt install jq curl
+        ```
+        (a disztribúciótól függően)
 4.  Állítsd be az API kulcsot a `.env` fájlban:
-    *   Készíts egy `.env` fájlt a következő tartalommal:
+    *   Először hozd létre a `.env` fájlt: `touch .env`
+    *   Majd szerkeszd a fájlt egy szövegszerkesztővel (pl. `nano .env`): `nano .env`
+    *   Illeszd be a következő sort, és cseréld ki a `YOUR_API_KEY`-t a saját API kulcsodra:
         ```
         YOUTUBE_API_KEY=YOUR_API_KEY
         ```
-    *   Cseréld ki a `YOUR_API_KEY`-t a saját YouTube Data API v3 kulcsodra.
+    *   Mentsd el a fájlt.
 5.  Futtasd a szkriptet:
     ```
     ./youtube_fetch.sh
